@@ -7,6 +7,16 @@
     <bean id="user" class="org.hmily.spring.ioc.overview.domain.User">
         <property name="id" value="1"/>
         <property name="name" value="hmily"/>
+        <property name="city" value="XIAMEN"/>
+        <property name="configFileLocation" value="classpath:/META-INF/user-config.preopertirs"></property>
+        <property name="workcities" value="BEIJING,XIAMEN"/>
+        <property name="lifeCities">
+            <list>
+                <value>BEIJING</value>
+                <value>XIAMEN</value>
+            </list>
+        </property>
+
     </bean>
 
     <!-- 延迟查找 -->
